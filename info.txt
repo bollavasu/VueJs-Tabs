@@ -1,0 +1,50 @@
+
+Tabs by using vue-slim-tabs
+
+https://github.com/egoist/vue-slim-tabs
+
+1)install vue-slim-tabs
+  npm install vue-slim-tabs --save
+2)create Tabs2.vue file in src/components folder
+	<template>
+	  <tabs>
+		<tab title="Vue">
+		  This is Vue
+		</tab>
+		<tab title="React">
+		  This is React
+		</tab>
+		<tab title="Svelte">
+		  This is Svelte
+		</tab>
+	  </tabs>
+	</template>
+
+	<script>
+	import { Tabs, Tab } from 'vue-slim-tabs'
+
+	export default {
+	  components: {
+		Tabs, Tab
+	  }
+	}
+	</script>
+
+	<!-- optionally use our default style -->
+	<style src="vue-slim-tabs/themes/default.css"></style>
+3)import Tabs2.vue in App.vue
+
+    import Tabs2 from './components/Tabs2.vue'
+  
+	export default {
+	  components:  {
+		   'input-vasu': input,
+		   'input-vasu-2': input2,
+		   'input-checkbox': Checkbox,
+		   'input-radio': Radio,
+		   'input-tabs': Tabs,
+		   'input-tabs-2': Tabs2
+	  }
+	}
+	
+	<input-tabs-2></input-tabs-2>
